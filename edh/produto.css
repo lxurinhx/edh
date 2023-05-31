@@ -1,0 +1,172 @@
+body{margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {text-decoration: none;
+    color: black;
+}
+
+.dark-mode {background-color: rgb(82, 82, 82);
+    color: white;
+}
+
+.light-mode {background-color: white;
+    color: black;
+}
+
+::-webkit-scrollbar{background-color: white; 
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{background: linear-gradient(to bottom, #577CFF 0%, #8EE6A1 100%); 
+}
+
+
+::-webkit-scrollbar-thumb{background-color: white;}
+
+/*header*/
+
+header {background-color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+header div {width: 1400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header div p {margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000000;
+}
+header div p:hover {background-color: #e0e6ff;
+}
+
+.linha {height: 5px;
+    width: 100%;
+}
+
+header button{ background-color: white;
+    border: 1px solid black;
+    height: 60px;
+    color:#000000;
+    margin: 20px;
+    font-family: 'Michroma';
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#linhazinha {background: linear-gradient(to right, #577CFF 0%, #8EE6A1 100%); ;
+    height: 10px;
+}
+
+/*main*/
+
+main {display: flex;
+    flex-direction: row;
+}
+
+#produto {margin-left: 10%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#produto h1 {font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+#btn {display: flex;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+#btn button {margin-left: 10px;
+    margin-right: 10px;
+    background-color: #c2cfff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Michroma', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+}
+    #btn button:hover {background-color: #e0e6ff;
+}
+
+#specifics {margin-top: 7%;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    background-image: linear-gradient(to bottom, #c2cfff, #f4f6ff);
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+#descr {font-size: 0.8em;
+    font-weight: 500;
+}
+
+@media (max-width:1200px) {
+    main {flex-direction: column;
+    }
+}
+
+/*footer*/
+
+footer {
+    margin-top: 75px;
+    background: linear-gradient(to left, #577CFF 0%, #8EE6A1 100%);
+    font-family: 'Michroma';
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 65px;
+}
+
+#mohave {font-family: 'Mohave';
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+footer ul {list-style: none;
+    padding-left: 0;
+    margin: 50px;
+}
+
+#horizontal-list {display: flex;
+    align-items: center;
+}
+
+#horizontal-list li {display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media(max-width:850px){
+    footer {flex-direction: column;
+    }
+}

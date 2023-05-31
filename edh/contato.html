@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>EDH - Contato</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='contato.css'>
+        <script src='main.js'></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Michroma&family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="img/logo.png">
+                <p>Produtos</p>
+                <a href="index.html">
+                <p>Loja</p>
+                </a>
+                <p>Contato</p>
+            </div>
+            <button onclick="darkMode()">Darkmode</button>
+            <button onclick="lightMode()">LightMode</button>
+        </header>
+
+        <div id="linhazinha"></div>
+
+        <main>
+
+            <section id="form">
+                <p>Entre em contato conosco!</p>
+                <form>
+                    Nome: <input type="text">
+                    Telefone: <input type="tel" maxlength="14" oninput="tele()" id="tel">
+                    E-mail: <input type="text">
+                    Assunto: <input type="text">
+                    Mensagem: <input type="text" class="msg">
+                </form>
+            </section>
+
+            <section id="nums">
+                <div id="telefone">
+                    <h1>Ou, se preferir, ligue</h1>
+                    <p><img src="img/telefone.png">(031) 3455 - 9876</p>
+
+                </div>
+
+                <div id="zap">
+                    <h1>ou mande uma mensagem</h1>
+                    <p><img src="img/whatsapp.png">(031) 99539 - 7548</p>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+
+            <ul>
+                <li id="mohave">Entre em contato conosco!</li>
+                <li>PÁGINA DE SUPORTE</li>
+            </ul>
+    
+            <ul id="horizontal-list">
+                <li><img src="img/twitter.png"> &nbsp; @EDHTECH</li>
+                <li><img src="img/instagram.png"> &nbsp; @EDHTECH</li>
+            </ul>
+    
+        </footer>
+
+    </body>
+
+    <script src="main.js"></script>
+    
+    </html>
